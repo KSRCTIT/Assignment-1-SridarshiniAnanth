@@ -1,0 +1,29 @@
+using System;
+
+class CalculatorApp
+{
+    static void Main()
+    {
+        int a = 10, b = 5;
+
+        
+        int totalApples = a + b;
+        Console.WriteLine("Total Apples = " + totalApples);
+
+       
+        int diffPencils = a - b;
+        Console.WriteLine("Difference of Pencils = " + diffPencils);
+
+        
+        int totalPages = 10 * 5;
+        Console.WriteLine("Total Pages = " + totalPages);
+
+        int chocolates = 10, kids = 5;
+        int eachKidGets = chocolates / kids;
+        Console.WriteLine("Each kid gets = " + eachKidGets);
+
+    
+        int leftover = chocolates % kids;
+        Console.WriteLine("Leftover Candies = " + leftover);
+    }
+}

@@ -1,0 +1,22 @@
+using System;
+using System.Text.RegularExpressions;
+
+class NameValidation
+{
+    static bool IsValidName(string name)
+    {
+      
+        return Regex.IsMatch(name, @"^[a-zA-Z\s]+$");
+    }
+
+    static void Main()
+    {
+        Console.Write("Enter Name: ");
+        string name = Console.ReadLine();
+
+        if (IsValidName(name))
+            Console.WriteLine("Valid Name");
+        else
+            Console.WriteLine("Invalid Name (should not contain digits or special characters)");
+    }
+}

@@ -1,0 +1,26 @@
+using System;
+
+class LoginSystem
+{
+    static void Main()
+    {
+        string username = "admin";
+        string password = "1234";
+
+        string enteredUser = "admin";
+        string enteredPass = "1234";
+
+        if (enteredUser == username && enteredPass == password)
+            Console.WriteLine("Access Granted");
+        else
+            Console.WriteLine("Access Denied");
+
+        
+        if (enteredUser == username || enteredPass == password)
+            Console.WriteLine("At least one is correct");
+
+        bool isLogin = (enteredUser == username && enteredPass == password);
+        Console.WriteLine("Login Success = " + isLogin);
+        Console.WriteLine("Opposite of Login Success = " + !isLogin);
+    }
+}

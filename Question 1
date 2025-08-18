@@ -1,0 +1,52 @@
+using System;
+
+class Assignment1
+{
+    static void Main()
+    {
+       
+        float temperature = 36.6f;
+        if (temperature > 37.0f)
+            Console.WriteLine("Fever");
+        else
+            Console.WriteLine("Normal");
+
+  
+        int age = 18;
+        if (age >= 18)
+            Console.WriteLine("Eligible to Vote");
+        else
+            Console.WriteLine("Not Eligible");
+
+
+        char gender = 'F';
+        if (gender == 'M')
+            Console.WriteLine("Male");
+        else if (gender == 'F')
+            Console.WriteLine("Female");
+        else
+            Console.WriteLine("Other");
+
+        double price = 1000.0;
+        double discount = 10.0;  
+        double finalPrice = price - (price * (discount / 100.0));
+        Console.WriteLine("Final Price after discount = " + finalPrice);
+
+        
+        bool loginSuccess = true;
+        if (loginSuccess)
+            Console.WriteLine("Login Successful");
+        else
+            Console.WriteLine("Access Denied");
+
+        int myAge = 25;
+        float myTemp = 98.6f;
+        char grade = 'A';
+        bool isPassed = true;
+
+        Console.WriteLine(myAge + " is of type " + myAge.GetType());
+        Console.WriteLine(myTemp + " is of type " + myTemp.GetType());
+        Console.WriteLine(grade + " is of type " + grade.GetType());
+        Console.WriteLine(isPassed + " is of type " + isPassed.GetType());
+    }
+}
